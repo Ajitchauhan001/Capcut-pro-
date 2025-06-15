@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: url("/Netflix/image_search_1745221590784.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+nav li {
+  list-style: none;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.zero {
+  text-align: center;
+  font-size: 2em;
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+}
+
+.BOX2 {
+  font-size: 16px;
+  color: #d1d1d7;
+  letter-spacing: 1px;
+}
+
+.card {
+  text-align: center;
+}
+
+.ml {
+  background-color: #0442f6;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.ml:hover {
+  filter: brightness(1.2);
+}
+
+footer {
+  background: linear-gradient(150deg, rgba(6, 55, 182, 0.63), rgba(106, 12, 120, 0.71));
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+footer .social-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+footer .social-icons a {
+  color: white;
+  font-size: 2rem;
+}
+
+footer .footer-bottom button {
+  background: #0442f6;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+footer .footer-bottom button:hover {
+  background: #033bb5;
+}
+
+@media (max-width: 768px) {
+  main {
+    background-size: cover;
+    height: auto;
+  }
+
+  .zero {
+    font-size: 1.5em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .ml {
+    width: 80%;
+  }
+}
